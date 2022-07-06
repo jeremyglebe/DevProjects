@@ -120,5 +120,14 @@ let projects =
             tags: ["p5.js", "Animation", "Mobile", "Javascript", "Silly"],
             pubLink: "https://jeremyglebe.com/InsultMe/",
             srcLink: "https://github.com/jeremyglebe/InsultMe"
+        },
+        {
+            title: "Odin Grid",
+            desc: "Odin Grid is a dynamic, customizable game grid for any and all digital tabletops. "
+                + "No need to get a video editor. No need to tape a plastic grid over your screen. "
+                + "Just launch Odin Grid and you are good to play",
+            tags: ["p5.js", "Electron", "Javascript", "Tools"],
+            pubLink: "https://drowsyprof.itch.io/odin",
+            srcLink: "https://github.com/jeremyglebe/OdinGrid"
         }
     ];
