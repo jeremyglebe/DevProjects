@@ -129,5 +129,13 @@ let projects =
             tags: ["p5.js", "Electron", "Javascript", "Tools"],
             pubLink: "https://drowsyprof.itch.io/odin",
             srcLink: "https://github.com/jeremyglebe/OdinGrid"
+        },
+        {
+            title: "Knights Tour",
+            desc: "The Knight’s Tour puzzle implemented as a C++ Console Application. (Styled as a game, not a solver) "
+                + "This program was created when I was teaching Data Structures & Algorithms and was used as an in-class review.",
+            tags: ["C++", "ASCII", "Art", "Games", "Text-Based"],
+            pubLink: "https://jeremyglebe.com/KnightsTourCPP/",
+            srcLink: "https://github.com/jeremyglebe/KnightsTourCPP"
         }
     ];
