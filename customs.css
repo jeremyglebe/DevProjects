@@ -1,0 +1,75 @@
+/* Hide scrollbar for IE, Edge and Firefox */
+.my-invisible-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.my-invisible-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.my-pixel-img {
+    /* https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
+    image-rendering: optimizeSpeed;
+    /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox                        */
+    image-rendering: -o-crisp-edges;
+    /* Opera                          */
+    image-rendering: -webkit-optimize-contrast;
+    /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;
+    /* Chrome */
+    image-rendering: optimize-contrast;
+    /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE8+                           */
+}
+
+.my-filter-box {
+    max-height: 20vh;
+}
+
+.my-tile-grid {
+    margin-top: 15px !important;
+}
+
+.my-card {
+    margin: 0 10px 0 10px;
+}
+
+.my-card-img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.my-card-content {
+    height: 10vw;
+}
+
+.my-list-box {
+}
+
+.my-list-box-title {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+
+.my-list-box-img {
+    width: 25%;
+    display: inline-block;
+    margin: 0;
+}
+
+.my-list-box-content {
+    width: 70%;
+    display: inline-block;
+    max-height: 15vh;
+    margin: 0;
+}

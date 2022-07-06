@@ -1,0 +1,115 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bulma.min.css" />
+    <link rel="stylesheet" href="customs.css" />
+    <link rel="stylesheet" href="styles/project-grid.css" />
+    <script src="scripts/lib/alpine.min.js" defer></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/size.js"></script>
+</head>
+
+<body>
+    <!--Page header with a banner-->
+    <div class="hero is-info">
+        <div class="hero-body">
+            <h1 class="title">
+                Projects & Products
+            </h1>
+            <h2 class="subtitle">
+                A (mostly) complete listing of software & apps I've created
+            </h2>
+        </div>
+    </div>
+
+    <!--Project data is stored on key "projects_data"-->
+    <div x-data="DataService">
+
+        <div class="box my-filter-box my-invisible-scrollbar">
+
+            <h2 class="subtitle">Filter by tag
+                <template x-if="IsFiltered()">
+                    <a x-on:click="OnTagClicked(null)">(Clear All)</a>
+                </template>
+            </h2>
+
+            <!--Group of active filters-->
+            <div class="field is-grouped is-grouped-multiline">
+                <!--Display tags for all active filters-->
+                <template x-for="tag in Tags()">
+                    <template x-if="IsTagActive(tag)">
+                        <div class="control">
+                            <div class="tags has-addons">
+                                <span class="tag is-success" x-text="tag"></span>
+                                <a class="tag is-delete" x-on:click="OnTagClicked(tag)"></a>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </div>
+
+            <!--Just a horizontal bar separating the groups of tags-->
+            <hr />
+
+            <!--Group of inactive filters-->
+            <div class="field is-grouped is-grouped-multiline">
+                <!--Display tags for all active filters-->
+                <template x-for="tag in Tags()">
+                    <template x-if="!IsTagActive(tag)">
+                        <div class="control">
+                            <div class="tags has-addons">
+                                <span class="tag is-primary" x-text="tag"></span>
+                                <a class="tag" x-on:click="OnTagClicked(tag)">+</a>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </div>
+
+        </div>
+
+        <!--2D grid of project cards (CSS Grid + Bulma Cards)-->
+        <div class="project-grid">
+            <template x-for="proj in FilteredProjects()">
+                <div class="project-card">
+                    <div class="card">
+                        <div class="card-header">
+                            <p class="card-header-title" x-text="proj.title"></p>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image">
+                                <img x-bind:src="'thumbs/' + proj.title + '.png'" />
+                            </figure>
+                        </div>
+                        <div class="card-content my-invisible-scrollbar">
+                            <div class="content" x-text="proj.desc"></div>
+                        </div>
+                        <footer class="card-footer">
+                            <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
+                            <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
+                        </footer>
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <!--Shows a message if no projects meet filter requirements-->
+        <template x-if="IsNoResults()">
+            <p style="margin-left:15px">No projects match the selected filters</p>
+        </template>
+    </div>
+</body>
+
+<!--
+    Notes on Alpine
+        - Flow controls such as for loops (x-for) and if statements (x-if) may only be attached to <template> tags
+            - Flow control tags (<template>) may only contain a single top-level tag to show/hide/repeat
+              <template x-for="...">
+                <div>...multiple tags...</div>
+              </template>
+        - Counting the index with a for loop (x-for="(thing, index) in list") starts counting from 1
+        
+    Notes on Bulma
+        - Bulma's grids (both the columns system and tile system) are based on flexbox.
+            - Generally CSS grid is more effective for this sort of thing than flexbox but most CSS
+              libraries don't include it yet. That is why I'm not using Bulma's grid tools.
+-->

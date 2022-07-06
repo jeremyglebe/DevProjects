@@ -1,0 +1,62 @@
+/* Base styles (minimal screen size) */
+.project-grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    width: 65%;
+    margin: auto;
+}
+
+.project-card {
+    background-color: red;
+    /* width:height ratio */
+    aspect-ratio: 1/1.5;
+}
+
+.project-card .card-image {
+    height: 45%;
+    overflow: hidden;
+}
+
+.project-card .card-image .image img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.project-card .card-content {
+    height: 45%;
+    max-height: 45%;
+}
+
+/* Screen Size: SM ≥ 568px	*/
+@media screen and (min-width: 35.5em) {}
+
+/* Screen Size: MD ≥ 768px */
+@media screen and (min-width: 48em) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 75%;
+    }
+}
+
+/* Screen Size: LG ≥ 1024px */
+@media screen and (min-width: 64em) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+}
+
+/* Screen Size: XL ≥ 1280px */
+@media screen and (min-width: 80em) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Screen Size: XXL ≥ 1920px */
+@media screen and (min-width: 120em) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
