@@ -98,8 +98,17 @@ let projects =
             desc: "Space RPG was originally developed by a friend and student of mine for my summer game design course. "
                 + "After the assignment was completed and graded, I took an interest in it. "
                 + "I helped flesh out gameplay and visuals to make it an overall more enjoyable experience. "
-                + "The game is a bit like bejewled with some scary monsters and a space cowboy thrown into the mix.",
+                + "The game is a bit like bejewled with some scary monsters and a space cowboy thrown into the mix. "
+                + "(Thanks to Zachary Kingcade, the primary author of the project)",
             tags: ["Phaser", "Games", "Mobile", "Javascript", "Typescript"],
             pubLink: "https://zachkingcade.itch.io/space-rpg-beta"
+        },
+        {
+            title: "Turtle Art",
+            desc: "Turtle Art is a repository of small art & animation projects I have made using Python’s Turtle module. "
+                + "It is mostly spirals and other patterns that can be generated out of looping commands.",
+            tags: ["Python", "Turtle", "Brython", "Art", "Animation"],
+            pubLink: "https://jeremyglebe.com/TurtleArt/",
+            srcLink: "https://github.com/jeremyglebe/TurtleArt"
         }
     ];

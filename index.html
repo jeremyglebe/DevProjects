@@ -84,8 +84,12 @@
                             <div class="content" x-text="proj.desc"></div>
                         </div>
                         <footer class="card-footer">
-                            <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
-                            <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
+                            <template x-if="proj.pubLink">
+                                <a class="card-footer-item" x-bind:href="proj.pubLink">View Project</a>
+                            </template>
+                            <template x-if="proj.srcLink">
+                                <a class="card-footer-item" x-bind:href="proj.srcLink">View Source</a>
+                            </template>
                         </footer>
                     </div>
                 </div>
