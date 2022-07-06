@@ -118,6 +118,7 @@ let projects =
                 + "Then I decided to add emojis. Then cycling insults and a pause feature and - well it got out of hand. "
                 + "Enjoy!",
             tags: ["p5.js", "Animation", "Mobile", "Javascript", "Silly"],
-            pubLink: "https://jeremyglebe.com/Random/InsultMe/"
+            pubLink: "https://jeremyglebe.com/InsultMe/",
+            srcLink: "https://github.com/jeremyglebe/InsultMe"
         }
     ];
