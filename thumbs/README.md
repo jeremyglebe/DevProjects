@@ -1,0 +1,1 @@
+Thumbnail names must be `{title}.png` where `{title}` is replace with the **exact title** found in `data.js` and `.png` **must be lowercase**.

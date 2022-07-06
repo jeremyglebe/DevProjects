@@ -104,7 +104,7 @@ let projects =
             pubLink: "https://zachkingcade.itch.io/space-rpg-beta"
         },
         {
-            title: "Turtle Art",
+            title: "Turtle Art Show",
             desc: "Turtle Art is a repository of small art & animation projects I have made using Python’s Turtle module. "
                 + "It is mostly spirals and other patterns that can be generated out of looping commands.",
             tags: ["Python", "Turtle", "Brython", "Art", "Animation"],
@@ -112,7 +112,7 @@ let projects =
             srcLink: "https://github.com/jeremyglebe/TurtleArt"
         },
         {
-            title: "Insult Generator",
+            title: "Insult Me!",
             desc: "My class of 5th/6th graders was making a pretty silly insult generator project to learn about arrays. "
                 + "(Inspired by Nick Morgan’s book, “JavaScript for Kids”) I decided to make my own version. "
                 + "Then I decided to add emojis. Then cycling insults and a pause feature and - well it got out of hand. "
