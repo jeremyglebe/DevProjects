@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import "./colors.scss";
+
+/*** Variables to Override ***/
+
+$primary: $celadon; // Color for controls like buttons
+$info: $russian-green; // Color for info boxes?
+$success: $dark-pastel-green;
+$warning: $amber;
+$danger: $ruby-red; // Color for alerting user to dangerous actions
+$light: $rich-black;
+$dark: $pale-silver;
+
+$scheme-main: $rich-black-darker; // Main color
+$scheme-invert: $cultured; // Contrast to main color
+$background: $rich-black;
+$border: $prussian-blue;
+$border-hover: $indigo-dye;
+$border-light: $prussian-blue;
+$border-light-hover: $rich-black;
+$text: $pale-silver; // Standard text color
+$text-light: $pale-silver; // Standard text color
+$text-strong: $cultured; // Bold text color
+$code: $dark-pastel-green;
+$link: $green-sheen; // Color for clickable text
+$link-visited: $violet-crayola;
+$link-hover: $middle-blue-green;
+$link-hover-border: $dark-pastel-green;
+$link-focus: $middle-blue-green;
+$link-focus-border: $blue-bell;
+$link-active: $middle-blue-green;
+$link-active-border: $eton-blue;
+
+@import "./bulma/bulma.sass";
