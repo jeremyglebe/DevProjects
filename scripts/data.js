@@ -137,5 +137,15 @@ let projects =
             tags: ["C++", "ASCII", "Art", "Games", "Text-Based"],
             pubLink: "https://jeremyglebe.com/KnightsTourCPP/",
             srcLink: "https://github.com/jeremyglebe/KnightsTourCPP"
+        },
+        {
+            title: "Goblin Trap",
+            desc: "A prototype stealth horror game built in Unreal Engine 4. I made this for 3D Game Programming at UNT. "
+                + "The game takes place in a dark, mysterious dungeon. In one section of the crypt, you will be pursued by a "
+                + "goblin dressed in gladiator armor. The game is incomplete. There is not a win condition. (Hence why I called "
+                + "it Goblin Trap)",
+            tags: ["Unreal Engine", "Games", "Stealth", "3D", "Blueprints", "Horror", "Prototype"],
+            pubLink: "https://drowsyprof.itch.io/goblin-trap",
+            srcLink: "https://github.com/jeremyglebe/GoblinTrap"
         }
     ];
