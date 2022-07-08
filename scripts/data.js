@@ -147,5 +147,13 @@ let projects =
             tags: ["Unreal Engine", "Games", "Stealth", "3D", "Blueprints", "Horror", "Prototype"],
             pubLink: "https://drowsyprof.itch.io/goblin-trap",
             srcLink: "https://github.com/jeremyglebe/GoblinTrap"
+        },
+        {
+            title: "DevProjects",
+            desc: "A collection of my personal projects. You're looking at it right now. The page uses Bulma CSS and CSS "
+                + "Grid for layout. I built the tag/filter system using Javascript and Alpine.js. You can view the "
+                + "source code on GitHub.",
+            tags: ["Javascript", "Alpine.js", "Bulma", "CSS", "CSS Grid"],
+            srcLink: "https://github.com/jeremyglebe/DevProjects"
         }
     ];
