@@ -155,5 +155,12 @@ let projects =
                 + "source code on GitHub.",
             tags: ["Javascript", "Alpine.js", "Bulma", "CSS", "CSS Grid"],
             srcLink: "https://github.com/jeremyglebe/DevProjects"
+        },
+        {
+            title: "TrIO",
+            desc: "C++ library designed to streamline the use of unicode, colors, and unbuffered input in the terminal. Make everything from menu-driven programs to simple games without the complexity of GUI or graphics libraries. (Linked below is the GitHub repository for TrIO and the page for TrIOLife, which is a project built with TrIO)",
+            tags: ["C++", "Text-Based", "Tools", "Education"],
+            srcLink: "https://github.com/jeremyglebe/TrIO",
+            pubLink: "https://jeremyglebe.com/TrIOLife/"
         }
     ];
