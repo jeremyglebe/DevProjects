@@ -18,6 +18,11 @@
     overflow: hidden;
 }
 
+.project-card .card-image .image {
+    height: 100%;
+    width: 100%;
+}
+
 .project-card .card-image .image img {
     object-fit: cover;
     object-position: center;
