@@ -9,7 +9,8 @@
 
 .project-card {
     /* width:height ratio */
-    aspect-ratio: 1/1.5;
+    aspect-ratio: 1/1.5 !important;
+    max-height: 60vh;
 }
 
 .project-card .card-image {
