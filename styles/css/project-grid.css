@@ -9,18 +9,12 @@
 
 .project-card {
     /* width:height ratio */
-    aspect-ratio: 1/1.5 !important;
-    max-height: 60vh;
+    aspect-ratio: 1/1.5;
 }
 
 .project-card .card-image {
     height: 45%;
     overflow: hidden;
-}
-
-.project-card .card-image .image {
-    height: 100%;
-    width: 100%;
 }
 
 .project-card .card-image .image img {
